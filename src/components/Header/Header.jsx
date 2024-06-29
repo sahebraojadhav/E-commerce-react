@@ -14,6 +14,7 @@ import {
 
 //css imports
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,9 @@ function Header(props) {
   return (
     <div>
       <Navbar {...props}>
-        <NavbarBrand href="/" id='title'>Shopcart</NavbarBrand>
+        <NavbarBrand href="/" id='title'>
+         <Link to="/">Shopcart</Link>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>    

@@ -18,7 +18,8 @@ function App() {
         container="md"
         fixed="top"
       />
-      <div style={{ marginTop: "100px" }}>Some content</div>
+      <div style={{ marginTop: "5rem" }}></div>
+    
      <MainRoutes/>
       <Footer />
     </div>
