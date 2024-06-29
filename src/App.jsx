@@ -1,7 +1,11 @@
+//css imports
 import "./App.css";
+
+//componts imports
 import Header from "./components/Header/Header";
 import Footer from "./components/footer/Footer";
-import Home from "./pages/Home/Home";
+//import Home from "./pages/Home/Home";
+import MainRoutes from "./routes/MainRoutes";
 
 function App() {
   return (
@@ -15,7 +19,7 @@ function App() {
         fixed="top"
       />
       <div style={{ marginTop: "100px" }}>Some content</div>
-      <Home />
+     <MainRoutes/>
       <Footer />
     </div>
   );
